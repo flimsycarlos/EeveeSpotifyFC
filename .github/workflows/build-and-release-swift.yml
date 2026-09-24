@@ -8,7 +8,7 @@ env:
 
 jobs:
   build:
-   runs-on: macos-latest
+   runs-on: macos-15
    env:
      THEOS: ${{ github.workspace }}/theos
    steps:
@@ -69,7 +69,7 @@ jobs:
     needs: build
     permissions:
         contents: write
-    runs-on: macos-latest
+    runs-on: macos-15
     defaults:
       run:
         shell: zsh {0}
